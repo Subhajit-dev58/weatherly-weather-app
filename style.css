@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.card{
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.15);
+    padding:40px;
+    border-radius:20px;
+    width:350px;
+    text-align:center;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{margin-bottom:20px;}
+
+.search-box{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+
+button{
+    padding:12px 16px;
+    border:none;
+    border-radius:10px;
+    background:#ffffff;
+    color:#333;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.location-btn{
+    margin-top:10px;
+    width:100%;
+}
+
+.weather img{
+    width:80px;
+}
+
+.details{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+    font-size:18px;
+}
+
+.hidden{ display:none; }
+
+.error{
+    margin-top:20px;
+    color:#ffdede;
+}
