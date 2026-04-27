@@ -1,192 +1,104 @@
-<<<<<<< HEAD
 *{
-  box-sizing:border-box;
-  font-family:'Segoe UI',sans-serif;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
-body{
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:linear-gradient(135deg,#1f4037,#99f2c8);
-  transition:1s;
+
+ body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
 }
 
-.card{
-  backdrop-filter:blur(18px);
-  background:rgba(255,255,255,0.12);
-  padding:35px;
-  border-radius:20px;
-  width:360px;
-  text-align:center;
-  color:white;
-  box-shadow:0 15px 40px rgba(0,0,0,0.25);
+
+ .card{
+    backdrop-filter: blur(18px);
+    background: rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:22px;
+    width:360px;
+    text-align:center;
+    color:white;
+    box-shadow:0 25px 50px rgba(0,0,0,0.35);
+    border:1px solid rgba(255,255,255,0.08);
 }
 
 .search-box{
-  display:flex;
-  gap:10px;
+    display:flex;
+    gap:10px;
 }
 
 input{
-  flex:1;
-  padding:12px;
-  border:none;
-  border-radius:10px;
-  outline:none;
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
 }
+
 
 button{
-  padding:12px 16px;
-  border:none;
-  border-radius:10px;
-  background:white;
-  cursor:pointer;
-  font-weight:bold;
+    padding:12px 16px;
+    border:none;
+    border-radius:10px;
+    background: linear-gradient(120deg,#00c6ff,#0072ff);
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-button:hover{ transform:scale(1.05); }
-
-.location-btn{ margin-top:10px; width:100%; }
-
-.loader{
-  border:5px solid rgba(255,255,255,0.3);
-  border-top:5px solid white;
-  border-radius:50%;
-  width:40px;
-  height:40px;
-  margin:20px auto;
-  animation:spin 1s linear infinite;
+button:hover{
+    transform:scale(1.06);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+button:hover{
+    transform:scale(1.05);
 }
 
-@keyframes spin{
-  100%{ transform:rotate(360deg); }
+.location-btn{
+    margin-top:10px;
+    width:100%;
 }
 
-.weather img{ width:80px; }
+.weather img{
+    width:80px;
+}
 
 .details{
-  display:flex;
-  justify-content:space-around;
-  margin-top:20px;
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+    font-size:18px;
 }
 
-.hidden{ display:none; }
-
-.error{ margin-top:20px; color:#ffdede; }
-
-.history{
-  margin-top:15px;
+.forecast{
+    margin-top:25px;
 }
 
-.history button{
-  margin:3px;
-  padding:5px 10px;
-  font-size:12px;
+.forecast-container{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding:10px 0;
 }
 
-.emoji{
-  font-size:40px;
+
+.forecast-card{
+    background: rgba(255,255,255,0.12);
+    padding:10px;
+    border-radius:15px;
+    min-width:90px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.2);
+}
+.hidden{
+    display:none;
 }
 
-#dateTime{
-  opacity:0.8;
-=======
-*{
-  box-sizing:border-box;
-  font-family:'Segoe UI',sans-serif;
-}
-
-body{
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:linear-gradient(135deg,#1f4037,#99f2c8);
-  transition:1s;
-}
-
-.card{
-  backdrop-filter:blur(18px);
-  background:rgba(255,255,255,0.12);
-  padding:35px;
-  border-radius:20px;
-  width:360px;
-  text-align:center;
-  color:white;
-  box-shadow:0 15px 40px rgba(0,0,0,0.25);
-}
-
-.search-box{
-  display:flex;
-  gap:10px;
-}
-
-input{
-  flex:1;
-  padding:12px;
-  border:none;
-  border-radius:10px;
-  outline:none;
-}
-
-button{
-  padding:12px 16px;
-  border:none;
-  border-radius:10px;
-  background:white;
-  cursor:pointer;
-  font-weight:bold;
-}
-
-button:hover{ transform:scale(1.05); }
-
-.location-btn{ margin-top:10px; width:100%; }
-
-.loader{
-  border:5px solid rgba(255,255,255,0.3);
-  border-top:5px solid white;
-  border-radius:50%;
-  width:40px;
-  height:40px;
-  margin:20px auto;
-  animation:spin 1s linear infinite;
-}
-
-@keyframes spin{
-  100%{ transform:rotate(360deg); }
-}
-
-.weather img{ width:80px; }
-
-.details{
-  display:flex;
-  justify-content:space-around;
-  margin-top:20px;
-}
-
-.hidden{ display:none; }
-
-.error{ margin-top:20px; color:#ffdede; }
-
-.history{
-  margin-top:15px;
-}
-
-.history button{
-  margin:3px;
-  padding:5px 10px;
-  font-size:12px;
-}
-
-.emoji{
-  font-size:40px;
-}
-
-#dateTime{
-  opacity:0.8;
->>>>>>> 3e21f2b875fc89f411cd98c03650d26ffaae32e7
+.error{
+    margin-top:15px;
+    color:#ffdede;
 }
