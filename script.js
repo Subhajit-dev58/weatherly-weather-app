@@ -1,4 +1,4 @@
-const apiKey = "3770046748ae7d34c95906dfc29276ee"; 
+const apiKey = "MY_API_KEY";
 const btn = document.getElementById("getWeatherBtn");
 const locationBtn = document.getElementById("locationBtn");
 const input = document.getElementById("cityInput");
