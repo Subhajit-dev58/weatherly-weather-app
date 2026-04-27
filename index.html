@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Weatherly</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weatherly</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="app">
-    <div class="card">
-        <h1>🌤 Weatherly</h1>
+  <div class="card">
+    <h1>🌤 Weatherly</h1>
 
-        <div class="search-box">
-            <input type="text" id="cityInput" placeholder="Search city...">
-            <button id="getWeatherBtn">Search</button>
-        </div>
-
-        <button id="locationBtn" class="location-btn">📍 Use My Location</button>
-
-        <div id="loading" class="hidden">Loading...</div>
-
-        <div id="weatherResult" class="weather hidden">
-            <h2 id="cityName"></h2>
-            <img id="weatherIcon" />
-            <h1 id="temp"></h1>
-            <p id="desc"></p>
-
-            <div class="details">
-                <div>💧 <span id="humidity"></span></div>
-                <div>💨 <span id="wind"></span></div>
-            </div>
-        </div>
-
-        <div id="error" class="error hidden"></div>
-
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Search city...">
+      <button id="getWeatherBtn">Search</button>
     </div>
+
+    <button id="locationBtn" class="location-btn">📍 Use My Location</button>
+
+    <div id="history" class="history"></div>
+
+    <div id="loading" class="loader hidden"></div>
+
+    <div id="weatherResult" class="weather hidden">
+      <h2 id="cityName"></h2>
+      <p id="dateTime"></p>
+      <div id="emoji" class="emoji"></div>
+
+      <img id="weatherIcon">
+      <h1 id="temp"></h1>
+      <p id="desc"></p>
+
+      <div class="details">
+        <div>🌡 Feels like <span id="feels"></span></div>
+        <div>💧 <span id="humidity"></span></div>
+        <div>💨 <span id="wind"></span></div>
+      </div>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+  </div>
 </div>
 
 <script src="script.js"></script>
