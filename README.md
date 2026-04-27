@@ -46,7 +46,7 @@ https://subhajit-dev58.github.io/weatherly-weather-app/
 
 This project uses the OpenWeather API.
 
-For security reasons, the API key is **not included** in this repository.
+For security reasons, the API key is not included in this repository.
 
 To run the project locally:
 
