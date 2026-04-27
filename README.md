@@ -23,10 +23,10 @@ https://subhajit-dev58.github.io/weatherly-weather-app/
 ## Screenshots
 
 ### Home Screen
-![Home](screenshot1.png)
+![Home Screen](screenshots/HomeScreen.png)
 
 ### Weather Result
-![Weather](screenshot2.png)
+![Weather Result](screenshots/Weather.png)
 
 ---
 
@@ -71,3 +71,6 @@ Download the project and open `index.html` in your browser after adding your API
 ## Author
 
 Subhajit
+<!-- git add .
+git commit -m "Added project screenshots"
+git push -->
