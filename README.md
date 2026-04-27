@@ -28,9 +28,6 @@ https://subhajit-dev58.github.io/weatherly-weather-app/
 ### Weather Result
 ![Weather](screenshot2.png)
 
-### Current Location Weather
-![Location](screenshot3.png)
-
 ---
 
 ## Tech Stack
