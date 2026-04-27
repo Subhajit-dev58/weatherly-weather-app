@@ -58,7 +58,7 @@ To run the project locally:
 3. Replace this line:
 
 ```javascript
-const apiKey = "YOUR_API_KEY_HERE";
+const apiKey = "MY_API_KEY";
 ```
 
 with your own API key.
